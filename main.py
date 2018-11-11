@@ -1,8 +1,9 @@
 import overlayWindow
-import overlaySample
-import currentSample
-import openpyxl2
+import currentSampleToExcel
+import Data
+
 if __name__ == '__main__':
-	currentSample.saveToExcel()
-	overlayWindow.createWindow()
+	#data class stores all data for the 2 samples
+	data =Data.data()
+	overlayWindow.createWindow(data)
 
